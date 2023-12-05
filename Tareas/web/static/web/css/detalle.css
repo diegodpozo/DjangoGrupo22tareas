@@ -1,0 +1,24 @@
+h3{
+text-align: center;
+padding: 20px;
+}
+
+section{
+   display: inline-block;
+   margin-left: 150px;
+}
+
+
+
+.objeto{
+    padding: 5px;
+    margin-bottom: 40px;
+    margin-left: -10px;
+    color: red;
+   font-size: 2.2rem;
+}
+
+#titulo{
+    font-size: 3.2rem;
+ 
+}

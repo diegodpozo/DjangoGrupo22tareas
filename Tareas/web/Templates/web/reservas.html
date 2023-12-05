@@ -1,0 +1,48 @@
+{% extends "web/base.html" %}
+{% load static %}
+
+{% block titulo %} -  VER RESERVAS - {% endblock%}
+
+{% block extra_css %} 
+<link rel="stylesheet" href="{% static 'web/css/reservas.css' %}">
+{% endblock %}
+
+{% block nav %} 
+      
+{% endblock %}
+
+{% block main%}
+
+<H1>ESTA ES LA LISTA DE RESERVAS</H1>
+
+<section>
+    {% for reserva in Lista_reservas %}
+
+  <article>
+   <p>
+    TITULO: {{reserva.titulo}}
+   </p>
+   <p>
+    CATEGORIA: {{reserva.descripcion}}
+   </p>
+   <p>
+    FECHA DE INICIO: {{reserva.fecha_inicio}}
+   </p>
+    <p>
+    FECHA DE FIN:{{reserva.fecha_fin}}
+    </p>
+    <a href="{%url 'detalle' pk=reserva.id %}"> VER DETALLE</a>
+    <a href="{%url 'modificar' pk=reserva.id %}"> MODIFICAR RESERVA</a>
+    <a href="{%url 'borrar' pk=reserva.id %}"> ELIMINAR RESERVA</a>
+    </article>
+   
+    {% empty %}
+    <article>
+    <p>NO HAY RESERVAS</p>
+    </article>
+    
+    {% endfor %}
+</section>
+ 
+
+{% endblock %}

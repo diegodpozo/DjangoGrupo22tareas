@@ -1,0 +1,21 @@
+{% extends "web/base.html" %}
+{% load static %}
+
+{% block titulo %}-SOBRE NOSOTROS-{% endblock%}
+
+{% block extra_css %} 
+<link rel="stylesheet" href="{% static 'web/css/about.css' %}">
+{% endblock %}
+{% block nav %}  {% endblock %}  
+
+{% block main%}
+        <article id="grupo">
+            <h1 id="intgrup">Integrantes del Grupo</h1>
+            <p>JHON HINCAPIE</p>
+            <p>CLAUDIO ROHR</p>
+            <p>PABLO LOMBARDI</p>
+            <p>DIEGO POZO</p>
+        </article>
+
+        {% endblock %}
+</html>

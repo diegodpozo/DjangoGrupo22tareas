@@ -1,0 +1,19 @@
+{% extends "web/base.html" %}
+{% load static %}
+
+{% block titulo %} MODIFICAR RESERVA - {% endblock%}
+
+{% block extra_css %} 
+<link rel="stylesheet" href="{% static 'web/css/modificar.css' %}">
+{% endblock %}
+
+{% block nav %}  {% endblock %}  
+
+{% block main%}
+<h3>MODIFICACION DE LA RESERVA DE: <p id="titulo"> {{object.titulo}}</p></h3>
+<form method="post">
+    {% csrf_token %}
+   <p>{{form.as_p}}</p> 
+    <input type="submit" value="update" id="boton">
+</form>
+{% endblock %}  

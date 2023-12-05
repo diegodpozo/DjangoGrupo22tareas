@@ -1,0 +1,23 @@
+{% extends "web/base.html" %}
+{% load static %}
+
+{% block titulo %} GENERAR RESERVAS - {% endblock%}
+
+{% block extra_css %} 
+<link rel="stylesheet" href="{% static 'web/css/crear.css' %}">
+{% endblock %}
+
+{% block nav %} {% endblock %}  
+
+{% block main%}
+<h3>COMPLETE LOS DATOS DE SU RESERVA</h3>
+<form method="POST" action="{% url 'crear' %}">
+
+    {% csrf_token %}
+
+    {{form.as_p}}
+<input type="submit"  id="boton">
+    
+</form>
+
+{% endblock %}

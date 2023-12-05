@@ -1,0 +1,50 @@
+h3{
+    text-align: center;
+    padding: 10px;
+    }
+    
+    form{
+       display: inline-block;
+       margin-left: 150px;
+    }
+    
+    input{
+        width: 100px;
+        height: 30px;
+        background-color: rgb(194, 194, 206);
+        font-size: 1rem;
+        width: 250px;
+    }
+
+    #boton{
+
+        width: 200px;
+        height: 50px;
+        margin-bottom: 30px;
+        border-radius: 20px;
+        background-color: black;
+        color: white;
+        font-size: 1.2rem;
+    }
+
+    
+    .objeto{
+        padding: 5px;
+        margin-bottom: 40px;
+        margin-left: -10px;
+        color: red;
+       font-size: 2.2rem;
+    }
+    
+    #titulo{
+        font-size: 3.2rem;
+     
+    }
+
+p{
+    padding: 10px;
+}
+#titulo{
+    font-size: 3.2rem;
+ 
+}

@@ -1,0 +1,20 @@
+{% extends "web/base.html" %}
+{% load static %}
+
+{% block titulo %} ELIMINAR RESERVA - {% endblock%}
+
+{% block extra_css %} 
+<link rel="stylesheet" href="{% static 'web/css/borrar.css' %}">
+{% endblock %}
+
+{% block nav %}  {% endblock %}  
+
+{% block main%}
+<h3>BORRAR UNA RESERVA</h3>
+<form method="post">
+    {% csrf_token %}
+    <p>SEGURO DE BORRAR: "{{object}}"? </p>
+    {{form}}
+    <input type="submit" value="CONFIRM" id="boton">
+</form>
+{% endblock %}
